@@ -1,0 +1,15 @@
+.template-container {
+  text-align: center;
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: green;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+  }
+}

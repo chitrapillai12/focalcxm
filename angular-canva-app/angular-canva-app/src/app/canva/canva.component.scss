@@ -1,0 +1,59 @@
+.canva-container {
+  display: flex;
+  margin-top: 10px;
+
+  .browse-container {
+    display: inline;
+    width: 30%;
+    border: 1px solid black;
+    height: 86vh;
+  }
+  .canva-space {
+    display: inline;
+    width: 50%;
+    border: 1px solid black;
+    max-height: max-content;
+    margin-left: 100px;
+  }
+}
+
+.img-list {
+  border: transparent;
+  span {
+    margin: 10px;
+    font-size: 15px;
+  }
+  img {
+    margin-left: 5px;
+  }
+  div {
+    margin-bottom: 10px;
+    background-color: lightgray;
+  }
+}
+
+.list-title {
+  font-size: 18px;
+  margin: 5px;
+  font-weight: 700;
+  color: #000000d6;
+}
+
+.upload-btn {
+  color: white;
+  background: green;
+  border: none;
+  height: 25px;
+  padding-top: 6px;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+::-webkit-file-upload-button {
+  display: none;
+}
+input[type="file"] {
+  width: 217px;
+  color: transparent;
+  margin-left: -104px;
+}

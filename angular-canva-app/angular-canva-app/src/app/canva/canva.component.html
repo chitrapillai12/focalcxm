@@ -1,0 +1,19 @@
+<div class="canva-container">
+    <div class="browse-container">
+       <div class="upload-btn">Browse Images  <input class="form-control" type="file"   accept="image/*" multiple
+        (change)="uploadImg($event)"></div>
+        <div *ngIf="uploadedImages.length !== 0" class="list-title">
+            Layers
+        </div>
+            <div class="img-list">
+                    <div *ngFor="let file of uploadedImages">
+                      <img [src]="file.src" [alt]="file.name" [style.width.px]="fixedWidthPreview" [style.height.px]="fixedHeightPreview" />
+                      <span>{{ file.name }}</span>
+                    </div>
+            </div>
+    </div>
+    <div class="canva-space">
+        <canvas #canvas ></canvas>
+    </div>
+
+</div>

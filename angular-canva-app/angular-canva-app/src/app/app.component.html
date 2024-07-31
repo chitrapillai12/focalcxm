@@ -1,0 +1,5 @@
+<div *ngIf="!showCanvaTemplate" class="template-container">
+    <button (click)="loadCanva()">+Template</button>
+</div>
+<div *ngIf="showCanvaTemplate"><app-header></app-header>
+<app-canva></app-canva></div>
